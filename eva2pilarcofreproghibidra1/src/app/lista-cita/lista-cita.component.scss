@@ -1,0 +1,32 @@
+center-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+  .custom-card {
+    width: 80%;
+    max-width: 500px;
+    align-items: center;
+    //margin: auto;
+    padding: 16px;
+   // height: 100%;
+  }
+  .frase {
+    font-size: 1.1rem;
+    text-align: left;
+    color: #2667e0;
+    margin-bottom: 4px;
+  }
+  .autor {
+    font-size: 0.9rem;
+    text-align: right;
+    margin-left: 10px;
+    color: #555;
+  }
+  .colored-card {
+    background-color: #c1c2c4; /* azul muy claro (AliceBlue) */
+    color: #333; /* texto oscuro para buen contraste */
+    border-radius: 10px;
+  }
+  

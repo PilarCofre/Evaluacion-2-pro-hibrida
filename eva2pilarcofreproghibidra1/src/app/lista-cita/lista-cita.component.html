@@ -1,0 +1,23 @@
+<ion-card class="custom-card colored-card">
+  <ion-card-content>
+    <ul>
+      <li *ngFor="let c of citas; let i = index" style="display: flex; justify-content: space-between; align-items: center;">
+        
+        <div>
+          <p class="frase">{{ c.frase }}</p>
+          <p class="autor"><strong>{{ c.autor }}</strong></p>
+        </div>
+
+        <ion-button color="danger"
+         size="small"
+         fill="clear" 
+         (click)="eliminarCita(i)"
+         [disabled]="!configuracionService.permitirEliminar">
+          <ion-icon name="trash" 
+          slot="icon-only"></ion-icon>
+        </ion-button>
+
+      </li> 
+    </ul>              
+  </ion-card-content>
+</ion-card>

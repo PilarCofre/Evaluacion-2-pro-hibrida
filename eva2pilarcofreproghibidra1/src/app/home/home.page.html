@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Citas
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/configuracion']" > <!-- para definir la rut de la pagina de la configuracion-->
+        <ion-icon icon="settings-outline" /> <!--//los ionos se importan en el contructor de manera distintaen el homepage-->       
+      </ion-button>
+    </ion-buttons>        
+  </ion-toolbar>
+</ion-header>
+
+<!-- con esto funcion y muestra como primera pagian donde estan todas 
+ citas y las opcion de agregar-->
+<!--<ion-content class="center-content" [fullscreen]="true">
+  <app-citas />
+</ion-content>-->
+
+<!--estoy probando para que me nuestre el home-->
+
+  <ion-card class="custom-card colored-card">
+    <ion-card-content>
+          <p class="frase">{{fraseAleatoria?.frase}} </p>
+          <p class="autor"><strong>{{fraseAleatoria?.autor}}</strong></p>           
+    </ion-card-content>
+  </ion-card>
+ <ion-content>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button [routerLink]="['/formulario-citas']">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button> 
+    </ion-fab>
+</ion-content>
+<!--</app-app-citas>-->
+ 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/formulario-citas" ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Configuraciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Configuraciones</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Aquí está el toggle que queremos mostrar -->
+  <ion-item>
+  <ion-label>Permitir eliminar citas</ion-label>
+    <ion-toggle [(ngModel)]="permitirEliminar" (ionChange)="toggleChange($event)"></ion-toggle>
+  </ion-item>
+
+</ion-content>
